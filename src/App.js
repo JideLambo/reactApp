@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Projects from './components/Projects'
+import AddProject from './components/AddProjects'
 import './App.css';
 
 class App extends Component {
@@ -30,8 +31,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        My App
-        <Projects projects={this.state.projects} />
+       
+        <div className="container">
+           My App
+          <AddProject />
+          <Projects projects={this.state.projects} />
+        </div>
       </div>
     );
   }
